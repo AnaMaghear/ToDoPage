@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+
+  --title-color:rgb(0, 0, 0);
+  --background: rgb(255, 255, 255);
+  --todo-card-color: auto;
+  --todo-content-color: auto;
+  --todo-plus-button: auto;
+}
+
+.dark{
+  --title-color:rgb(14, 131, 136);
+  --background: rgb(44, 51, 51);
+  --todo-card-color: rgb(203, 228, 222);
+  --todo-content-color: rgb(44, 51, 51);
+  --todo-plus-button: rgb(203, 228, 222);
+}
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--background)  !important;
+  color: var(--title-color) !important;
+}

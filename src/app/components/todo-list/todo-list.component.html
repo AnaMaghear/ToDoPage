@@ -1,0 +1,6 @@
+<div class="d-flex flex-column justify-content-start">
+  <app-todo-card *ngFor="let todo of todos"
+  [todo]="todo" class="todo-card"
+  (deleteClicked)="onDeleteClicked($event)">
+  </app-todo-card>
+</div>

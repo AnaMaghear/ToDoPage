@@ -1,0 +1,19 @@
+.todo-header{
+  height: calc(100vh - 300px) ;
+  top: 200px;
+  position: fixed;
+}
+
+.bulb-img{
+  height: 200px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.bulb-img:hover{
+  transform: translate(0, -10px);
+}
+
+.button-color{
+  background-color: var(--todo-plus-button);
+}

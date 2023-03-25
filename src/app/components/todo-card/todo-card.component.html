@@ -1,0 +1,10 @@
+<mat-card class="card-background">
+  <mat-card-content class="card-content-color"><h1>{{todo.title}}</h1></mat-card-content>
+  <mat-card-content class="card-content-color"><h5 >{{todo.dueDate | date}}</h5></mat-card-content>
+  <mat-card-content class="card-content-color"><h3 class="fst-italic">{{todo.description}}</h3></mat-card-content>
+  <div class="d-flex flex-row justify-content-around">
+      <button type="button" class="m-3 btn btn-warning" (click)="onEdit()">Edit</button>
+      <button type="button" class="m-3 btn btn-danger" (click)="sendDeleteClicked()">Delete</button>
+  </div>
+
+</mat-card>

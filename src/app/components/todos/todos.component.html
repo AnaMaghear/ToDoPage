@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <div style="position: fixed">
+    <img (click)="themeService.toogleTheme()"  class="bulb-img" src="../../../assets/light-bulb-hanging-removebg-preview.png" alt="light">
+  </div>
+  <div class="d-flex align-items-center" style="overflow-x: hidden">
+    <div class="todo-header col-md-3 d-flex justify-content-center flex-column">
+      <p class="fst-italic" style="font-size:7vw">ToDos</p>
+      <button  type="button" class="button-color fs-2 btn btn-light mt-5" style="width: 20%; margin-left: 35%" (click)="onAddTodo()">+</button>
+    </div>
+    <div class=" h-100  col-md-9" style="margin-left: 50%; margin-top: 5%">
+      <app-todo-list [todos]="todosService.todos$ | async" (deleteClicked)="deleteTodo($event)"></app-todo-list>
+    </div>
+  </div>
+</div>
